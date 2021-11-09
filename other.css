@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #fbfbf9;
+}
+
+h2 {
+    font-family: 'Courier New', monospace;
+    font-weight: lighter;
+    font-size: 60px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: -15px;
+    margin-left: 70px;
+    color: #3d3a37;
+}
+
+button img {
+    padding: 0;
+    font-size: 0;
+    border: none;
+    width: 80px;
+    height: auto;
+    max-height: 80px;
+}
+
+button img:hover {
+    opacity: 50%;
+}
+
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    height: 100%;
+}
+
+
+/* TOP BAR */
+
+.topNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1153bd;
+}
+
+.topNav h1 {
+    padding: 50px;
+    font-size: 59px;
+    color: #fbfbf9;
+}
+
+.navButtons {
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navButtons img {
+    width: 120px;
+    margin-right: 27px;
+}
+
+.stripesButtons {
+    display: none;
+}
+
+.mobileNav {
+    display: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: -20px;
+    margin-top: 40px;
+}
+
+.picText img {
+    height: 60px;
+    width: auto;
+    margin-left: -10px;
+}
+
+.actText {
+    display: none;
+}
+
+.rightSide {
+    margin-top: 100px;
+    border-radius: 25px;
+    border: none;
+    padding-bottom: 40px;
+    width: 280px;
+    height: 470px;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.yellowBox {
+    background-color: #fff132a4;
+    width: 450px;
+    height: clamp(47px, 250%, 1340px);
+    margin-top: 140px;
+    margin-right: clamp(47px, 5%, 200px);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+}
+
+
+/* CLOTHES TOP */
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.topPicker {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* SLIDER */
+
+.slider {
+    width: 650px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+    width: 40px;
+    height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: #33332c;
+    border-radius: 1px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 500px;
+    height: 400px;
+    margin-left: 50px;
+    padding-left: 90px;
+    padding-right: 50px;
+    border-radius: 50px;
+    background: #eae9e16c;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.author-info a {
+    color: white;
+}
+
+.slider>a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+
+.slider>a:active {
+    top: 1px;
+}
+
+.slider>a:focus {
+    background: #000;
+}
+
+.slides img {
+    object-fit: contain;
+    position: absolute;
+    /* left: -59;
+    height: 320px;
+    width: auto;
+    padding-left: clamp(17px, 47px, 77px);
+    padding-right: clamp(17px, 47px, 77px); */
+    width: 130%;
+    height: 90%;
+}
+
+
+}
+
+/* PANTS */
+.pants {
+    display: flex;
+    flex-direction: column;
+}
+.pantsPicker {
+    display: flex;
+    justify-content: center;
+}
+.pantsPictures .slider {
+    width: 530px;
+}
+.pantsPictures .slides>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 300px;
+    height: 550px;
+    margin-left: 90px;
+    padding-left: 110px;
+    padding-right: 110px;
+    border-radius: 50px;
+    background: #eae9e16c;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+/* SOCKS */
+.socks {
+    display: flex;
+    flex-direction: column;
+}
+.socksPicker {
+    display: flex;
+    justify-content: center;
+}
+
+/* SHOES */
+.shoes {
+    display: flex;
+    flex-direction: column;
+}
+.shoesPicker {
+    display: flex;
+    justify-content: center;
+}
+
+/* DECOr STUFF */
+.rightSide h2 {
+    font-size: 30px;
+    /* padding-left: 5px; */
+    
+    padding-top: 140px;
+}
+
+/* ACCESSORIES */
+.accessory {
+    display: flex;
+    flex-direction: column;
+}
+.accessoryPicker {
+    display: flex;
+    justify-content: center;
+}
+
+/* RINGS */
+.rings {
+    display: flex;
+    flex-direction: column;
+}
+.ringsPicker {
+    display: flex;
+    justify-content: center;
+}
+
+/* SOCKS */
+.socks {
+    display: flex;
+    flex-direction: column;
+}
+.socksPicker {
+    display: flex;
+    justify-content: center;
+}
+.curved-div svg {
+    display: block;
+    margin-bottom: -1%;
+}
+.rightSide .slider {
+    width: 350px;
+    text-align: center;
+    overflow: hidden;
+    /* margin-left: -14px; */
+}
+.rightSide .slides>div {
+    width: 250px;
+    height: 200px;
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #fbfbf9;
+}
+.rightSide .slides img {
+    object-fit: contain;
+    position: absolute;
+    width: 150%;
+    height: 80%;
+}
+.dinosaur {
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    margin-top: -47%;
+    margin-right: 3%;
+    border: #BB2CB7;
+}
+.dinosaur svg {
+    color: #BB2CB7;
+    width: 35%;
+}
+@media only screen and (min-width: 20px) and (max-width: 734px) {
+    body {
+        /* background-color: hotpink; */
+    }
+    
+    .mobileNav {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .mobileNav img {
+        width: 200px;
+        height: auto;
+    }
+    
+    .topNav {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .topNav h1 {
+        font-size: 49px;
+        color: #1153bd;
+        margin-left: -48px;
+    }
+    
+    .leftSide {
+        display: none;
+    }
+    
+    .rightContent {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 190px;
+    }
+    
+    .yellowBox {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        margin-top: 380px;
+        height: 100%;
+    }
+    
+    .curved-div svg {
+        margin-top: 150%;
+        display: block;
+    }
+    
+    .rightSide .slider {
+        width: 370px;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .rightSide .slides img {
+        width: 90%;
+        height: 90%;
+    }
+}
